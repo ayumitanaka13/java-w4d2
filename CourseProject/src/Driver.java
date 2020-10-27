@@ -26,7 +26,7 @@ public class Driver {
 		return "The instructor does not exsits.";
 	}
 
-	
+	// main method
 	public static void main(String[] args) {
 		
 		ArrayList<Course> courseList = new ArrayList<Course>();
@@ -48,8 +48,7 @@ public class Driver {
 		printCourse(courseList);
 		
 		Scanner input = new Scanner(System.in);
-		
-		System.out.println("Enter the last name of instructor");
+		System.out.println("Enter the last name of instructor:");
 		String instructorName = input.nextLine();
 		
 		System.out.println(findInstructor(courseList, instructorName));

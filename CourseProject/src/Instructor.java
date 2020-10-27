@@ -17,22 +17,13 @@ public class Instructor {
 		setExperiencedYear(experiencedYear);
 	}
 	
-	/*
-	 * 	getStatus () (With switch and case)————>
-	 *  if Experience year < 2 we have Junior Instructor 
-     *  If Experience year is between 2 and 4 we have 
-     *  Intermediate Instructor
-     *  More than 4 we have Senior Instructor 
-	 */
 	
+	
+	/*
+	 * 	getStatus
+	 *  @ return level of instructor
+	 */
 	public String getStatus() {
-//		if (experiencedYear < 2) {
-//			return "Junior Instructor";
-//		} else if (experiencedYear <= 2 && experiencedYear >= 4) {
-//			return "Intermediate Instructor";
-//		} else {
-//			return "Senior Instructor";
-//		}
 		switch (experiencedYear) {
 			case 1:
 				return "Junior Instructor";
